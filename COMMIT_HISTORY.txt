@@ -1,0 +1,11 @@
+3a0015f Initialise project README
+763c283 Add initial forecast assumptions file
+25c1d8f Create HTML essay scaffold
+804642e Add basic page styling
+1aa9c39 Draft landing thesis section
+ecabeaa Add economic channels outline
+ea0da10 Add scenario structure
+d65dbeb Add policy playbook outline
+17baf58 Expand transparent scenario assumptions
+73d09c0 Complete interactive forecast webpage
+3c80e2a Add reproducibility and GitHub Pages instructions
