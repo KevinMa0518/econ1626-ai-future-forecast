@@ -9,3 +9,5 @@ d65dbeb Add policy playbook outline
 17baf58 Expand transparent scenario assumptions
 73d09c0 Complete interactive forecast webpage
 3c80e2a Add reproducibility and GitHub Pages instructions
+5897c82 Document meaningful commit history
+0b92431 Add GitHub Pages nojekyll marker
