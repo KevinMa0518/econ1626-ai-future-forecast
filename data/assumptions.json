@@ -1,1 +1,29 @@
-{"project":"ECON1626 AI Future Forecast","baseline_year":2026}
+{
+  "project": "ECON1626 AI Future Forecast",
+  "title": "Australia's AI Productivity Bargain",
+  "baseline_year": 2026,
+  "output_index_2026_equals_100": {
+    "years": [2026, 2027, 2028, 2029, 2030],
+    "baseline": [100, 102.0, 104.6, 107.8, 111.2],
+    "upside": [100, 102.6, 106.2, 110.6, 115.8],
+    "downside": [100, 101.2, 102.6, 104.1, 105.8]
+  },
+  "abs_ai_rd_millions_aud": {
+    "2021-22": 276.3,
+    "2023-24": 668.3
+  },
+  "simulator_formula": {
+    "gdp_uplift_percent": "0.7 + adoption_speed*0.035 + worker_skill_investment*0.012 + governance_trust*0.008",
+    "transition_pressure_score": "clamp(adoption_speed*0.45 - worker_skill_investment*0.25 + (100-governance_trust)*0.12, 0, 100)",
+    "trust_failure_risk_score": "clamp((100-governance_trust)*0.65 + adoption_speed*0.18 - worker_skill_investment*0.08, 0, 100)"
+  },
+  "calibration_sources": [
+    "ABS 2025 AI R&D data",
+    "Tech Council of Australia 2023 generative AI value scenarios",
+    "IMF 2024 labour exposure analysis",
+    "RBA 2025 technology investment and AI liaison survey",
+    "Productivity Commission 2024 AI opportunity papers",
+    "Australian Government AI safety and adoption guidance"
+  ],
+  "note": "This is a transparent student scenario model, not an official economic forecast. Change the arrays or formula to test alternative assumptions."
+}
