@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australia’s AI Productivity Bargain | ECON1626 AI Future Forecast</title>
+  <meta name="description" content="An AI 2027-inspired interactive web essay forecasting how AI may reshape the Australian economy by 2030." />
+  <style>
+    :root{
+      --bg:#07111f; --panel:#0f1d33; --panel2:#142741; --ink:#edf5ff; --muted:#b8c7d9; --line:#284866;
+      --a:#60a5fa; --b:#34d399; --c:#fb7185; --d:#fbbf24; --white:#fff;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,#17345f 0,#07111f 35%,#050914 100%);color:var(--ink);line-height:1.62}
+    a{color:#9bd0ff} .wrap{max-width:1120px;margin:auto;padding:0 22px}.hero{min-height:92vh;display:grid;place-items:center;padding:80px 0 40px}.hero-card{background:linear-gradient(140deg,rgba(20,39,65,.94),rgba(7,17,31,.94));border:1px solid rgba(154,208,255,.25);box-shadow:0 30px 90px rgba(0,0,0,.38);border-radius:32px;padding:42px}.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 13px;color:var(--muted);font-size:.92rem}.tag span{width:9px;height:9px;border-radius:50%;background:var(--b);box-shadow:0 0 18px var(--b)}h1{font-size:clamp(2.2rem,6vw,5.8rem);line-height:1;margin:20px 0 18px;letter-spacing:-.06em}h2{font-size:clamp(1.6rem,3vw,2.55rem);line-height:1.1;margin:0 0 18px;letter-spacing:-.035em}h3{font-size:1.25rem;margin:22px 0 8px}.lead{font-size:clamp(1.08rem,2vw,1.35rem);max-width:880px;color:#dbeafe}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.pill{background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.28);border-radius:999px;padding:9px 12px;color:#dbeafe;font-size:.92rem}.nav{position:sticky;top:0;z-index:9;background:rgba(5,9,20,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav .wrap{display:flex;gap:12px;overflow:auto;padding-top:11px;padding-bottom:11px}.nav a{white-space:nowrap;text-decoration:none;color:#dbeafe;font-size:.92rem;border:1px solid rgba(255,255,255,.12);padding:7px 10px;border-radius:999px}.section{padding:70px 0;border-top:1px solid rgba(255,255,255,.07)}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.card{background:linear-gradient(180deg,rgba(20,39,65,.94),rgba(15,29,51,.92));border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:24px;box-shadow:0 18px 50px rgba(0,0,0,.22)}.span-4{grid-column:span 4}.span-5{grid-column:span 5}.span-7{grid-column:span 7}.span-8{grid-column:span 8}.span-12{grid-column:span 12}.kpi{font-size:2.55rem;font-weight:800;letter-spacing:-.04em}.kpi small{font-size:1rem;color:var(--muted);font-weight:600}.muted{color:var(--muted)}.source{font-size:.86rem;color:#a7bbd2}.chartbox{height:360px}.smallchart{height:260px}.controls{display:grid;gap:16px}.control label{display:flex;justify-content:space-between;gap:12px;color:#dbeafe;font-weight:700}.control input{width:100%;accent-color:#60a5fa}.meter{height:12px;border-radius:999px;background:#1c3454;overflow:hidden}.meter span{display:block;height:100%;background:linear-gradient(90deg,#60a5fa,#34d399);border-radius:999px;width:50%}.btns{display:flex;flex-wrap:wrap;gap:10px}.btn{cursor:pointer;border:1px solid rgba(255,255,255,.18);background:#122340;color:#eef6ff;border-radius:999px;padding:10px 14px;font-weight:700}.btn:hover{background:#1b3558}.scenario{border-left:5px solid var(--a)}.scenario.up{border-color:var(--b)}.scenario.down{border-color:var(--c)}table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:18px}th,td{padding:13px;border-bottom:1px solid rgba(255,255,255,.09);vertical-align:top}th{text-align:left;color:#dbeafe;background:rgba(255,255,255,.05)}.timeline{display:grid;gap:14px}.step{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:start}.year{font-weight:900;color:#93c5fd}.callout{background:linear-gradient(135deg,rgba(52,211,153,.16),rgba(96,165,250,.12));border:1px solid rgba(52,211,153,.28);border-radius:22px;padding:20px}.refs p{padding-left:1.2rem;text-indent:-1.2rem;margin:.7rem 0;color:#d7e7f7}.footer{padding:35px 0 70px;color:var(--muted)}canvas{width:100%;height:100%}@media(max-width:850px){.span-4,.span-5,.span-7,.span-8{grid-column:span 12}.hero-card{padding:28px}.step{grid-template-columns:1fr}.chartbox{height:300px}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="tag"><span></span> ECON1626 Assessment 3 · Interactive Web Essay · 2027–2030 Forecast</div>
+        <h1>Australia’s AI Productivity Bargain</h1>
+        <p class="lead"><strong>Thesis:</strong> By 2030, artificial intelligence is more likely to act as an economic amplifier than a simple job destroyer for Australia. The best outcome is not automatic. It depends on whether firms, workers and government convert AI capability into redesigned tasks, trusted data systems and broad workforce capability. My forecast is a <strong>baseline uplift of about 3–4% in economic output relative to a no-AI path</strong>, with an upside near 5% if adoption is fast and responsible, and a downside near 2% if AI is deployed unevenly, opaquely and mainly as labour cost-cutting.</p>
+        <div class="meta">
+          <span class="pill">Scope: Australian national economy</span>
+          <span class="pill">Horizon: 2027–2030</span>
+          <span class="pill">Lens: productivity · tasks · wages · governance</span>
+          <span class="pill">Student: [Yikai Ma/S4034223]</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Page navigation">
+    <div class="wrap">
+      <a href="#thesis">Thesis</a><a href="#channels">Capabilities → channels</a><a href="#evidence">Evidence</a><a href="#scenarios">Scenarios</a><a href="#simulator">Simulator</a><a href="#policy">Policy playbook</a><a href="#methods">Methods</a><a href="#references">References</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section" id="thesis">
+      <div class="wrap grid">
+        <div class="span-7 card">
+          <h2>1. Landing thesis: a productivity bargain, not a magic shock</h2>
+          <p>Australia enters the AI decade with a familiar economic problem: high living standards but weak productivity growth. The Reserve Bank of Australia notes that firms have invested heavily in information technology, yet measured productivity gains can take years because technology must be embedded in new processes, skills and management systems (Fernando, McLoughlin and Ratnayake 2025). AI therefore matters because it attacks exactly the bottleneck that dominates advanced service economies: the cost of routine cognitive work.</p>
+          <p>This essay is inspired by the scenario method of <em>AI 2027</em>, which uses concrete timelines and alternative endings to force clearer thinking about uncertain AI futures (Kokotajlo et al. 2025). I do not assume superintelligence arrives by 2027. Instead, I use the scenario style to ask a narrower economic question: if advanced AI becomes a normal tool in offices, shops, hospitals, banks, classrooms and government agencies by 2030, what happens to Australian output, tasks and policy choices?</p>
+          <p>The argument is that Australia’s AI future will be decided less by the model itself than by complements around the model: data quality, cloud and cyber infrastructure, managerial redesign, worker training, contestability and trust. The same AI system can raise a nurse’s time with patients, reduce a bank’s fraud losses, or generate low-quality “work slop” and unfair decisions. The forecast is therefore conditional: AI creates a productivity bargain only if Australia trades speed for responsibility, not speed against responsibility.</p>
+        </div>
+        <div class="span-5 grid">
+          <div class="span-12 card">
+            <div class="kpi">3–4% <small>baseline output uplift by 2030</small></div>
+            <p class="muted">Calibrated against Australian modelling that places generative AI value at $45–$115 billion annually by 2030 depending on adoption speed, equivalent to roughly 2–5% of the economy (Tech Council of Australia 2023).</p>
+          </div>
+          <div class="span-12 card">
+            <div class="kpi">60% <small>advanced-economy jobs exposed</small></div>
+            <p class="muted">IMF analysis suggests around 60% of jobs in advanced economies may be affected by AI, with some complemented and others exposed to labour-saving automation (IMF 2024).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="channels">
+      <div class="wrap">
+        <h2>2. Capabilities → economic channels</h2>
+        <div class="grid">
+          <div class="span-4 card">
+            <h3>Channel A: task compression</h3>
+            <p>Large language and multimodal models compress tasks such as drafting, summarising, code assistance, claims processing, customer emails, procurement comparison and compliance checks. In task-based economics, this does not automatically remove occupations; it changes the bundle of tasks inside occupations. A junior accountant, for example, may spend less time formatting workpapers and more time checking judgement calls.</p>
+          </div>
+          <div class="span-4 card">
+            <h3>Channel B: augmentation and quality</h3>
+            <p>AI works as a “copilot” when it expands a worker’s effective capacity. This is important for Australia’s service-heavy economy because many productivity gains come from faster information search, better documentation, fewer errors and personalised service. However, the gain only appears when firms redesign workflows rather than simply adding chatbots on top of old processes.</p>
+          </div>
+          <div class="span-4 card">
+            <h3>Channel C: innovation and market structure</h3>
+            <p>AI can accelerate experimentation in software, science, logistics and product design. The risk is that frontier models, compute and cloud platforms are concentrated in a small number of global firms. If Australian businesses only rent intelligence from overseas platforms, productivity may rise while market power and data dependence also increase.</p>
+          </div>
+        </div>
+        <div class="callout" style="margin-top:20px">
+          <strong>Forecasting logic:</strong> productivity gains = AI capability × adoption × complementary investment − transition costs. The transition costs are not minor: training, cyber controls, governance records, data cleaning, workflow redesign and social acceptance decide whether AI becomes a general-purpose technology or just another software subscription.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="evidence">
+      <div class="wrap grid">
+        <div class="span-5 card">
+          <h2>3. Evidence dashboard</h2>
+          <p>Official Australian evidence shows that AI investment is already moving from hype to business spending. The ABS reported that business R&D expenditure grew 18% to $24.4 billion in 2023–24, while spending on AI R&D more than doubled from $276.3 million in 2021–22 to $668.3 million in 2023–24 (ABS 2025). The National AI Centre’s adoption tracker also indicates that Australian SMEs are actively experimenting with AI tools, benefits, challenges and responsible AI practices (National AI Centre n.d.).</p>
+          <p>The RBA’s 2025 liaison survey of more than 100 medium and large firms found that firms expect AI tools to be labour-saving and productivity-enhancing over the long term, while also changing roles and skills (Fernando, McLoughlin and Ratnayake 2025). This supports the core forecast: AI affects Australia first through tasks and skills before it shows up clearly in national productivity statistics.</p>
+        </div>
+        <div class="span-7 card">
+          <h3>ABS evidence: Australian business AI R&D</h3>
+          <div class="smallchart"><canvas id="rndChart" aria-label="AI R&D investment chart"></canvas></div>
+          <p class="source">Source data: ABS (2025), values in A$ million for AI R&D spending in 2021–22 and 2023–24.</p>
+        </div>
+        <div class="span-12 card">
+          <table>
+            <thead><tr><th>Evidence</th><th>How it shapes the forecast</th></tr></thead>
+            <tbody>
+              <tr><td>Productivity Commission: AI could significantly boost productivity if policy and regulation are well-directed.</td><td>Supports an upside scenario, but only with skills, data access and proportionate regulation.</td></tr>
+              <tr><td>Tech Council/Microsoft: $45b, $75b or $115b annual value by 2030 under slow, medium and fast adoption.</td><td>Calibrates my downside, baseline and upside output uplift ranges.</td></tr>
+              <tr><td>IMF: advanced economies face high exposure because they have many cognitive-task jobs.</td><td>Explains why Australia’s professional, finance, public administration and education sectors are highly affected.</td></tr>
+              <tr><td>Australian AI safety guidance: accountability, risk management, records, stakeholder impacts and human oversight.</td><td>Turns governance into a productivity variable because trust affects adoption and reduces failure costs.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="wrap">
+        <h2>4. Three scenarios for 2027–2030</h2>
+        <div class="grid">
+          <div class="span-4 card scenario">
+            <h3>Baseline: “Copilot diffusion”</h3>
+            <p>By 2030, AI becomes a normal layer inside Microsoft, Google, accounting, CRM, coding, retail and public-sector systems. Large firms adopt faster than SMEs. Output rises because teams draft, analyse and service customers faster, but productivity gains are delayed by data problems, fragmented training and cautious governance. Employment does not collapse, but routine entry-level and administrative pathways narrow.</p>
+          </div>
+          <div class="span-4 card scenario up">
+            <h3>Upside: “Trusted acceleration”</h3>
+            <p>Australia treats AI adoption as a national capability project. Government procurement sets clear standards, SMEs receive practical adoption support, and workers receive portable AI skills training. Health, finance, logistics and public services use AI to reduce back-office load while keeping humans accountable for high-impact decisions. Output gains spread more evenly and new AI-enabled services emerge.</p>
+          </div>
+          <div class="span-4 card scenario down">
+            <h3>Downside: “Fragmented automation”</h3>
+            <p>Firms chase labour savings without redesigning work or involving employees. AI errors, privacy failures, cyber incidents and biased decisions reduce trust. Workers face surveillance and insecure transitions, while SMEs lag because they lack data and management capability. Productivity improves only modestly, and gains flow mainly to capital owners and highly skilled workers.</p>
+          </div>
+          <div class="span-12 card">
+            <h3>Scenario output index, 2026 = 100</h3>
+            <div class="chartbox"><canvas id="scenarioChart" aria-label="Scenario output index chart"></canvas></div>
+            <p class="source">This is a transparent scenario model, not an official forecast. It is calibrated to published Australian generative AI value ranges and adjusted for adoption, skills and governance assumptions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="simulator">
+      <div class="wrap grid">
+        <div class="span-5 card">
+          <h2>5. Interactive policy simulator</h2>
+          <p>Move the sliders to see the mechanism. Faster adoption increases potential GDP uplift, but without skills and governance it also raises displacement pressure and trust risk. This is the core policy trade-off: the economy needs adoption speed, but speed without institutional capacity creates avoidable social and economic costs.</p>
+          <div class="controls">
+            <div class="control"><label>AI adoption speed <span id="adoptionVal">60</span></label><input id="adoption" type="range" min="10" max="100" value="60"></div>
+            <div class="control"><label>Worker skill investment <span id="skillsVal">55</span></label><input id="skills" type="range" min="10" max="100" value="55"></div>
+            <div class="control"><label>Governance and trust <span id="govVal">60</span></label><input id="governance" type="range" min="10" max="100" value="60"></div>
+          </div>
+          <div class="btns" style="margin-top:16px">
+            <button class="btn" data-preset="downside">Downside preset</button>
+            <button class="btn" data-preset="baseline">Baseline preset</button>
+            <button class="btn" data-preset="upside">Upside preset</button>
+          </div>
+        </div>
+        <div class="span-7 grid">
+          <div class="span-4 card"><div class="kpi" id="uplift">3.9%</div><p class="muted">2030 GDP uplift vs no-AI path</p><div class="meter"><span id="upliftBar"></span></div></div>
+          <div class="span-4 card"><div class="kpi" id="pressure">22</div><p class="muted">worker transition pressure / 100</p><div class="meter"><span id="pressureBar"></span></div></div>
+          <div class="span-4 card"><div class="kpi" id="risk">33</div><p class="muted">trust and failure risk / 100</p><div class="meter"><span id="riskBar"></span></div></div>
+          <div class="span-12 card">
+            <h3>Decision tree</h3>
+            <p id="treeText">Baseline path: productivity rises, but benefits are uneven unless policy upgrades skills and trust.</p>
+            <div class="btns"><button class="btn" data-tree="skills">Invest in skills first</button><button class="btn" data-tree="guardrails">Governance first</button><button class="btn" data-tree="wait">Wait and see</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="policy">
+      <div class="wrap grid">
+        <div class="span-7 card">
+          <h2>6. Policy playbook: what to do, when and with whom</h2>
+          <div class="timeline">
+            <div class="step"><div class="year">2026–27</div><div><strong>Build minimum capability.</strong> Require public agencies and large firms using high-impact AI to keep AI registers, assign accountable owners and publish plain-language explanations. Fund short AI-literacy modules through TAFE, universities and employer partnerships, aimed at frontline workers, managers and graduates.</div></div>
+            <div class="step"><div class="year">2027–28</div><div><strong>Redesign sectors, not just tasks.</strong> Create sector sandboxes in health administration, aged care, finance, logistics and government services. The goal is to test AI where productivity and service quality can both improve, while using stakeholder impact assessment and redress processes for affected people.</div></div>
+            <div class="step"><div class="year">2028–30</div><div><strong>Share gains and prevent lock-in.</strong> Use competition policy, interoperability standards and procurement rules to avoid dependence on a few model vendors. Measure whether AI is lifting wages, service access and SME productivity, not just reducing headcount.</div></div>
+          </div>
+        </div>
+        <div class="span-5 card">
+          <h3>Trade-offs and unintended consequences</h3>
+          <p><strong>Speed vs safety:</strong> heavy regulation can slow experimentation, but weak governance can produce costly failures and public backlash. Australia’s Voluntary AI Safety Standard and the 2025 Guidance for AI Adoption provide practical guardrails such as accountability, risk management, testing, monitoring and human oversight (Department of Industry, Science and Resources 2025; National AI Centre 2025).</p>
+          <p><strong>Productivity vs inclusion:</strong> AI may raise output while squeezing middle-skill routine office roles. A fair transition needs retraining before displacement, not after. KPIs should include AI training completion, wage growth in exposed occupations, SME adoption, incidents resolved, and the proportion of AI systems with clear human accountability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methods">
+      <div class="wrap grid">
+        <div class="span-6 card">
+          <h2>7. Methods, assumptions and uncertainty</h2>
+          <p>The forecast uses a simple scenario model rather than pretending to predict the exact future. I set 2026 output as 100 and model three paths to 2030. The scenario range is calibrated to the Tech Council/Microsoft estimate that generative AI may add $45–$115 billion annually by 2030 under slow to fast adoption, and to Productivity Commission and OECD arguments that AI behaves like a general-purpose technology whose benefits depend on complementary investment.</p>
+          <p>The main assumptions are: AI capability continues improving but remains constrained by compute, data quality and trust; adoption is faster in large firms than SMEs; knowledge-work tasks are more exposed than physical tasks; and governance can improve adoption by reducing failure costs. The model is uncertain because official AI adoption data is still developing, productivity is measured with a lag, and geopolitical, energy, copyright, cyber or model-safety shocks could change the path quickly.</p>
+        </div>
+        <div class="span-6 card">
+          <h2>8. AI-tooling disclosure</h2>
+          <p>Generative AI was used to support brainstorming, scenario design, drafting, editing, coding the interactive HTML/CSS/JavaScript page, and checking whether the narrative covered the rubric. The analytical claims were grounded in cited sources, and the scenario assumptions were kept visible so readers can challenge them. No confidential data was used. The final responsibility for source selection, interpretation and submission remains with the student.</p>
+          <p class="callout"><strong>Limit of the forecast:</strong> The model should be read as a decision aid. Its purpose is not to prove that one number is correct; its purpose is to show why adoption, skills and governance change the economic trajectory.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="references">
+      <div class="wrap card refs">
+        <h2>References & attributions</h2>
+        <p>Australian Bureau of Statistics 2025, <em>AI now fastest growing area for business R&amp;D</em>, ABS, viewed 7 June 2026, &lt;https://www.abs.gov.au/media-centre/media-releases/ai-now-fastest-growing-area-business-rd&gt;.</p>
+        <p>Department of Industry, Science and Resources 2025, <em>Voluntary AI Safety Standard</em>, Australian Government, viewed 7 June 2026, &lt;https://www.industry.gov.au/publications/voluntary-ai-safety-standard&gt;.</p>
+        <p>Digital Transformation Agency 2025, <em>Policy for the responsible use of AI in government: Version 2.0</em>, Australian Government, viewed 7 June 2026, &lt;https://www.digital.gov.au/ai/ai-in-government-policy&gt;.</p>
+        <p>Fernando, J, McLoughlin, K &amp; Ratnayake, R 2025, <em>Technology investment and AI: what are firms telling us?</em>, Reserve Bank of Australia Bulletin, viewed 7 June 2026, &lt;https://www.rba.gov.au/publications/bulletin/2025/nov/technology-investment-and-ai-what-are-firms-telling-us.html&gt;.</p>
+        <p>International Monetary Fund 2024, <em>AI will transform the global economy. Let’s make sure it benefits humanity</em>, IMF Blog, viewed 7 June 2026, &lt;https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity&gt;.</p>
+        <p>International Monetary Fund 2026, <em>New skills and AI are reshaping the future of work</em>, IMF Blog, viewed 7 June 2026, &lt;https://www.imf.org/en/blogs/articles/2026/01/14/new-skills-and-ai-are-reshaping-the-future-of-work&gt;.</p>
+        <p>Kokotajlo, D, Alexander, S, Larsen, T, Lifland, E &amp; Dean, R 2025, <em>AI 2027</em>, viewed 7 June 2026, &lt;https://ai-2027.com/&gt;.</p>
+        <p>National AI Centre n.d., <em>AI adoption tracker</em>, Australian Government, viewed 7 June 2026, &lt;https://www.ai.gov.au/news-and-insights/reports/ai-adoption-tracker&gt;.</p>
+        <p>National AI Centre 2025, <em>Guidance for AI adoption: implementation guidance</em>, Australian Government, viewed 7 June 2026, &lt;https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices/guidance-ai-adoption-implementation-guidance&gt;.</p>
+        <p>OECD 2024, <em>The impact of artificial intelligence on productivity, distribution and growth</em>, OECD Publishing, Paris, viewed 7 June 2026, &lt;https://www.oecd.org/en/publications/the-impact-of-artificial-intelligence-on-productivity-distribution-and-growth_8d900037-en.html&gt;.</p>
+        <p>Productivity Commission 2024, <em>Making the most of the AI opportunity: productivity, regulation and data access</em>, Australian Government, viewed 7 June 2026, &lt;https://www.pc.gov.au/inquiries-and-research/making-the-most-of-the-ai-opportunity/&gt;.</p>
+        <p>Tech Council of Australia 2023, <em>Generative AI could contribute $115 billion annually to Australia’s economy by 2030</em>, viewed 7 June 2026, &lt;https://techcouncil.com.au/newsroom/generative-ai-could-contribute-115-billion-annually-to-australias-economy-by-2030/&gt;.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">Prepared for ECON1626 Assessment 3. Replace the student placeholder before submission. This page uses only embedded HTML, CSS and JavaScript, so it should render directly on GitHub Pages.</div></footer>
+
+<script>
+const scenarioData={years:[2026,2027,2028,2029,2030],baseline:[100,102.0,104.6,107.8,111.2],upside:[100,102.6,106.2,110.6,115.8],downside:[100,101.2,102.6,104.1,105.8]};
+function drawLineChart(id, series, labels, colours, minY, maxY){
+  const canvas=document.getElementById(id), ctx=canvas.getContext('2d'), dpr=window.devicePixelRatio||1;
+  const rect=canvas.getBoundingClientRect(); canvas.width=rect.width*dpr; canvas.height=rect.height*dpr; ctx.scale(dpr,dpr);
+  const w=rect.width,h=rect.height,p={l:48,r:18,t:18,b:38}; ctx.clearRect(0,0,w,h); ctx.font='12px system-ui';
+  ctx.strokeStyle='rgba(255,255,255,.13)'; ctx.lineWidth=1;
+  for(let i=0;i<5;i++){let y=p.t+(h-p.t-p.b)*i/4; ctx.beginPath(); ctx.moveTo(p.l,y); ctx.lineTo(w-p.r,y); ctx.stroke(); const val=(maxY-(maxY-minY)*i/4).toFixed(0); ctx.fillStyle='#b8c7d9'; ctx.fillText(val,8,y+4)}
+  labels.forEach((lab,i)=>{let x=p.l+(w-p.l-p.r)*i/(labels.length-1); ctx.fillStyle='#b8c7d9'; ctx.fillText(lab,x-14,h-14)});
+  Object.entries(series).forEach(([name,arr],idx)=>{ctx.strokeStyle=colours[idx]; ctx.lineWidth=3; ctx.beginPath(); arr.forEach((v,i)=>{let x=p.l+(w-p.l-p.r)*i/(arr.length-1); let y=p.t+(maxY-v)/(maxY-minY)*(h-p.t-p.b); if(i===0)ctx.moveTo(x,y); else ctx.lineTo(x,y)}); ctx.stroke(); arr.forEach((v,i)=>{let x=p.l+(w-p.l-p.r)*i/(arr.length-1); let y=p.t+(maxY-v)/(maxY-minY)*(h-p.t-p.b); ctx.fillStyle=colours[idx]; ctx.beginPath(); ctx.arc(x,y,4,0,Math.PI*2); ctx.fill()}); ctx.fillStyle=colours[idx]; ctx.fillText(name,w-p.r-112,p.t+18+idx*20)});
+}
+function drawBarChart(){
+  const canvas=document.getElementById('rndChart'),ctx=canvas.getContext('2d'),dpr=window.devicePixelRatio||1,rect=canvas.getBoundingClientRect(); canvas.width=rect.width*dpr; canvas.height=rect.height*dpr; ctx.scale(dpr,dpr); const w=rect.width,h=rect.height,p={l:58,r:20,t:20,b:42}; const vals=[276.3,668.3],labs=['2021–22','2023–24']; ctx.clearRect(0,0,w,h); ctx.font='13px system-ui'; ctx.strokeStyle='rgba(255,255,255,.13)'; for(let i=0;i<4;i++){let y=p.t+(h-p.t-p.b)*i/3;ctx.beginPath();ctx.moveTo(p.l,y);ctx.lineTo(w-p.r,y);ctx.stroke();ctx.fillStyle='#b8c7d9';ctx.fillText(Math.round(700-(700*i/3)),10,y+4)} vals.forEach((v,i)=>{let bw=80,x=p.l+70+i*150,y=p.t+(700-v)/700*(h-p.t-p.b); let bh=h-p.b-y; ctx.fillStyle=i? '#34d399':'#60a5fa'; ctx.fillRect(x,y,bw,bh); ctx.fillStyle='#edf5ff';ctx.fillText('$'+v+'m',x+8,y-8);ctx.fillStyle='#b8c7d9';ctx.fillText(labs[i],x+7,h-15)}); }
+function clamp(x,min,max){return Math.max(min,Math.min(max,x))}
+function updateSim(){let a=+adoption.value,s=+skills.value,g=+governance.value; adoptionVal.textContent=a; skillsVal.textContent=s; govVal.textContent=g; let uplift=0.7+a*.035+s*.012+g*.008; let pressure=clamp(Math.round(a*.45-s*.25+(100-g)*.12),0,100); let risk=clamp(Math.round((100-g)*.65+a*.18-s*.08),0,100); document.getElementById('uplift').textContent=uplift.toFixed(1)+'%'; document.getElementById('pressure').textContent=pressure; document.getElementById('risk').textContent=risk; upliftBar.style.width=clamp(uplift/6*100,0,100)+'%'; pressureBar.style.width=pressure+'%'; riskBar.style.width=risk+'%';}
+function init(){drawLineChart('scenarioChart',{Baseline:scenarioData.baseline,Upside:scenarioData.upside,Downside:scenarioData.downside},scenarioData.years,['#60a5fa','#34d399','#fb7185'],98,118);drawBarChart(); updateSim(); ['adoption','skills','governance'].forEach(id=>document.getElementById(id).addEventListener('input',updateSim)); document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{let p=b.dataset.preset;if(p==='downside'){adoption.value=35;skills.value=25;governance.value=30} if(p==='baseline'){adoption.value=60;skills.value=55;governance.value=60} if(p==='upside'){adoption.value=85;skills.value=80;governance.value=85} updateSim()})); document.querySelectorAll('[data-tree]').forEach(b=>b.addEventListener('click',()=>{const t=b.dataset.tree; const text={skills:'Skills-first path: transition pressure falls because workers move from replaceable routine tasks into supervision, judgement, relationship and AI-enabled analysis roles.',guardrails:'Governance-first path: adoption may be slightly slower at the start, but trust improves and failure costs fall, supporting wider diffusion after 2027.',wait:'Wait-and-see path: short-term risk is low, but Australia loses learning time. By 2030, local firms may become dependent on overseas AI platforms and capture less value.'}; treeText.textContent=text[t];}));}
+window.addEventListener('load',init); window.addEventListener('resize',()=>{drawLineChart('scenarioChart',{Baseline:scenarioData.baseline,Upside:scenarioData.upside,Downside:scenarioData.downside},scenarioData.years,['#60a5fa','#34d399','#fb7185'],98,118);drawBarChart()});
+</script>
+</body>
+</html>
